@@ -62,7 +62,9 @@ transition: fade-out
 
 # プレイヤーシップの設定
 
-Projectのフォルダーの中のAsset -> Graphic -> Mini Pixel Pack 3 -> Player Shipを選択し、プレイヤーシップをクリックする。
+Projectのフォルダーの中のAsset -> Mini Pixel Pack 3 -> Player Shipを選択する。
+
+プレイヤーシップをクリックする。
 
 <img src="./SS/ClickOnAsset.png" width="800" />
 
@@ -91,7 +93,9 @@ Here is another comment.
 
 # 設定の変更
 
-右側にInspector画面が表示されるので、下のように設定する。出来たら、右下のApplyをクリックする。
+右側にInspector画面が表示されるので、下のように設定する。
+
+右下のApplyをクリックする。
 
 <img src=./SS/PlayerInspector.png width=350>
 
@@ -136,7 +140,9 @@ level: 2
 
 # スプライトの編集の設定
 
-Sliceを設定したら、右上にあるApplyをクリックする。クリックしたら、一旦右上のXをクリックしてSprite Editorを閉じる。
+Sliceを設定したら、右上にあるApplyをクリックする。
+
+クリックしたら、一旦Sprite Editorを右上のXで閉じる。
 
 <img src=./SS/SpriteEditorApply.png width=500>
 
@@ -144,7 +150,9 @@ Sliceを設定したら、右上にあるApplyをクリックする。クリッ�
 
 # プレイヤーシップのスプライトをゲーム内に設置
 
-Projectの中にあるプレイヤーシップのスプライトの右にある矢印を押して、真ん中のプレイヤーシップをクリックする。
+Projectの中にあるプレイヤーシップのスプライトの右にある矢印を押す。
+
+真ん中のプレイヤーシップをクリックする。
 
 <img src=./SS/IndividualSprite.png width=1000>
 
@@ -170,7 +178,9 @@ class: px-20
 ---
 
 # プレイヤーシップのコードを作る
-ゲーム内のプレイヤーシップをクリックし、右側に表示されるInspector内のAdd Componentというボタンをクリックする。
+ゲーム内のプレイヤーシップをクリックする。
+
+右側に表示されるInspector内のAdd Componentというボタンをクリックする。
 
 <img src=./SS/AddComponent.png width=300>
 
@@ -178,7 +188,9 @@ class: px-20
 
 # プレイヤーシップのコードを作る
 
-検索でPlayerと打ち、New Scriptをクリックする。
+検索でPlayerと打つ。
+
+New Scriptをクリックする。
 
 <img src=./SS/NewScript.png width=500>
 
@@ -186,7 +198,7 @@ class: px-20
 
 # プレイヤーシップのコードを作る
 
-そして、下にあるCreate and Addというボタンを押す。
+下にあるCreate and Addというボタンを押す。
 
 <img src=./SS/CreateAndAdd.png width=350>
 
@@ -198,6 +210,7 @@ dragPos:
 # プレイヤーシップの左右の動きのコード
 
 プレイヤーシップの左右の動きのコードを入力する。
+
 下のように入力する。
 
 <style>
@@ -241,6 +254,7 @@ void FixedUpdate()
     {
         rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
     }
+}
 ```
 
 コードが書けたら、ctrl + S、または File → Save Player.csでコードを保存。その後、Unityに戻る。
@@ -265,7 +279,9 @@ InspectorにあるRigidbody 2Dの設定を下のようにする。
 
 # プレイヤーシップの動きのテスト
 
-画面上の真ん中にある再生ボタンをクリックして、ゲームを走らせることができる。止めるときも同じボタンでできる。
+画面上の真ん中にある再生ボタンをクリックして、ゲームを走らせることができる。
+
+止めるときも同じボタンでできる。
 
 <img src=./SS/RunGame.png width= 500>
 
@@ -325,7 +341,9 @@ Projectにある弾のスプライトを押しながらSceneに動かす。
 
 # プレイヤーシップの弾
 
-Sceneの中にある弾をクリックして、Inspectorを見る。InspectorにあるAdd Componentのボタンを押す。
+Sceneの中にある弾をクリックして、Inspectorを見る。
+
+InspectorにあるAdd Componentのボタンを押す。
 <img src=./SS/BulletAddComponent.png width=300>
 
 ---
@@ -371,7 +389,9 @@ public class Bullet : MonoBehaviour
 ---
 
 # 弾のコード
-弾をクリックして、InspectorにあるAdd Componentのボタンを押して、Rigidbody2dを検索して、Rigidbody 2Dを押す。
+弾をクリックして、InspectorにあるAdd Componentのボタンを押す。
+
+Rigidbody2dを検索して、Rigidbody 2Dを押す。
 
 <img src=./SS/ComponentRigidbody.png width=300>
 
